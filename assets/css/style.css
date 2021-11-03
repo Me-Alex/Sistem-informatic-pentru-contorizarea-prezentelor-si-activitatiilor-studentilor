@@ -2,13 +2,16 @@
     margin: 0;
     text-decoration: none;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
+
 .get-started {
     width: 100vw;
     height: 100vh;
-    background: midnightblue;
+    background: rgb(25, 25, 112);
+    background: radial-gradient(circle, rgba(25, 25, 112, 1) 0%, rgba(0, 14, 23, 1) 100%, rgba(255, 255, 255, 1) 100%);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -38,6 +41,8 @@ html{
 }
 
 .container-header {
+    background: rgb(186, 92, 69);
+    background: linear-gradient(6deg, rgba(186, 92, 69, 1) 0%, rgba(0, 0, 0, 1) 100%, rgba(255, 255, 255, 1) 100%);
     height: fit-content;
     display: flex;
     flex-direction: row;
@@ -45,8 +50,19 @@ html{
     padding: 5%;
 }
 
+.nav {
+    display: flex;
+    gap: 20%;
+}
+.nav a{
+    color:white;
+
+}
+.not-registered a{
+    color:white;
+}
 .logo {
-    color: red;
+    color: rgb(255, 255, 255);
 }
 
 /* form sttyle */
@@ -58,14 +74,27 @@ html{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: rgb(31, 255, 0);
+    background: radial-gradient(circle, rgba(31, 255, 0, 1) 0%, rgba(0, 14, 23, 1) 100%, rgba(255, 255, 255, 1) 100%);
 }
-.form-container a{
+
+.form-container a {
     justify-content: start;
 }
 
 .form {
+    width: 20%;
+    height: 40%;
     display: flex;
     flex-direction: column;
+    gap: 2%;
+    justify-content: center;
+    align-items: center;
 }
 
 /* end of form style */
+
+.user {
+    display: flex;
+    flex-direction: row;
+}
