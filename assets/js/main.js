@@ -10,9 +10,19 @@ findParameter(".dots").onclick = () => {
     console.log("click");
     
 }
-findParameter(".dropDown-optionP").=()=>{
+findParameter(".dropDown-optionP").onblur=()=>{
     console.log("ceva");
     findParameter(".dropDown-options").style.display="none";
+}
+document.querySelectorAll(".dropDown-optionP").forEach((element, index) => {
+    element.onclick = () => {
+        // document.querySelectorAll(".actualEvent")[index].style.display="none";
+        element.parentNode.parentNode.parentNode.style.display = "none";
+    }
+});
+findParameter(".btnEvent").onclick=()=>{
+    const event=findParameter(".actualEvent");
+    findParameter(".events").innerHTML+=" "+event.innerText;+" ";
 }
 if (localStorage.getItem("user")) {
     hide("not-registered");

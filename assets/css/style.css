@@ -87,7 +87,23 @@ html {
     left: 0;
 }
 
+.btnEvent {
+    background-color: red;
+    color: white;
+    padding: 20px;
+    transition: all 0.5s;
+    border: 1px solid yellow;
+}
+
+.btnEvent:hover {
+    background-color: white;
+    color: red;
+    border-color: black;
+}
+
 .actualEvent {
+    display: flex;
+    flex-direction: column;
     position: relative;
     width: 40%;
     height: 150px;
@@ -95,7 +111,35 @@ html {
     box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
     background-color: red;
     cursor: ;
-    padding:10px;
+    padding: 10px;
+    color: yellow;
+    justify-content: center;
+}
+
+.actualEvent h2 {
+    color: black !important;
+}
+
+.join {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.join button {
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    transition: all 0.5s;
+    border: 1px solid yellow;
+}
+
+.join button:hover {
+    background-color: rgb(122, 5, 133);
+    color: white;
+    border-color: yellow;
 }
 
 .delete {
@@ -106,9 +150,11 @@ html {
     top: 15px;
     cursor: pointer;
 }
-.delete:hover{
+
+.delete:hover {
     opacity: 0.5;
 }
+
 .line1 {
     position: absolute;
     width: 15px;
@@ -127,16 +173,16 @@ html {
 
 .dots {
     width: 20px;
-    height:20px;
+    height: 20px;
     display: flex;
     flex-direction: column;
     position: absolute;
-    justify-content:center;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
     right: 20px;
     top: 15px;
     cursor: pointer;
-    gap:1px;
+    gap: 1px;
 }
 
 .dots .dot {
@@ -145,17 +191,16 @@ html {
     height: 4px;
     border-radius: 50%;
 }
-.dropDown-options{
-    position:absolute;
-    display:none;
-    margin-top:60px;
-    margin-left:-20px;
-    background-color:white;
-    padding:10px;
-    border-radius:5px;
-    
-}
 
+.dropDown-options {
+    position: absolute;
+    display: none;
+    margin-top: 60px;
+    margin-left: -20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
 
 /* .actualEvent:hover{
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
