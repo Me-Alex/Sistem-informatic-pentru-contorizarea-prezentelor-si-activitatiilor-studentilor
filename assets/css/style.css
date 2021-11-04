@@ -48,7 +48,7 @@ html {
     flex-direction: row;
     justify-content: space-between;
     padding: 2%;
-    font-size: 1vw;
+    /* font-size: 1vw; */
 }
 
 .events {
@@ -157,7 +157,7 @@ html {
 }
 
 .logged-in img {
-    width:2vw;
+    width:33px;
     height: auto;
     border-radius: 60%;
 }
@@ -189,4 +189,10 @@ html {
 
 ::-webkit-scrollbar-track {
     background-color: black;
+}
+
+@media only screen and (max-width:540px){
+    .container-header{
+        font-size: 16px;
+    }
 }
