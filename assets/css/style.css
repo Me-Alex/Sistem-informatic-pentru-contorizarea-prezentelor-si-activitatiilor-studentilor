@@ -47,20 +47,68 @@ html {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 5%;
+    padding: 2%;
+    font-size: 1vw;
 }
+
+.events {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+.profile {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-stats {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    font-size: 2vw;
+}
+
+.events-header {
+    width: 30%;
+    height: fit-content;
+    left: 0;
+}
+
+.actualEvent {
+    width: 40%;
+    height: 150px;
+    border-radius: 16px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+    background-color: red;
+    cursor: pointer;
+}
+/* .actualEvent:hover{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+} */
 
 .nav {
     display: flex;
     gap: 20%;
 }
-.nav a{
-    color:white;
 
+.nav a {
+    color: white;
 }
-.not-registered a{
-    color:white;
+
+.not-registered a {
+    color: white;
 }
+
 .logo {
     color: rgb(255, 255, 255);
 }
@@ -96,5 +144,49 @@ html {
 
 .user {
     display: flex;
+    flex-direction: row-reverse;
+}
+
+.logged-in {
+    display: flex;
     flex-direction: row;
+    gap: 5px;
+    color: white;
+    justify-content:center;
+    align-items: center;
+}
+
+.logged-in img {
+    width:2vw;
+    height: auto;
+    border-radius: 60%;
+}
+
+.logged-in:nth-child(1) {
+    /* color:red; */
+    cursor: pointer;
+}
+.log-out{
+    cursor:pointer;
+    text-align: center;
+    color:white !important;
+    background-color: midnightblue;
+    padding:5px;
+    border-radius:3px;
+}
+.log-out:hover{
+    background-color:gray;
+}
+
+::-webkit-scrollbar {
+    background-color: white;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: gray;
+}
+
+::-webkit-scrollbar-track {
+    background-color: black;
 }

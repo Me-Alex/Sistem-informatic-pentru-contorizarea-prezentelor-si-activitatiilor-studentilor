@@ -10,9 +10,6 @@
 </head>
 
 <body>
-    <div class="get-started">
-        <Button><a href="#ceva"> Get Started</a></Button>
-    </div>
     <div class="container">
         <div class="container-header">
             <div class="logo">Logo</div>
@@ -35,24 +32,18 @@
                 </div>
             </div>
         </div>
-        <div class="events">
-            <div class="events-header">
-                <h4>Upcoming Events to attend</h1>
-            </div>
-            <div class="actualEvent">
-
-            </div>
-            <div class="actualEvent">
-
-            </div>
-            <div class="actualEvent">
-
-            </div>
-            <div class="actualEvent">
-
-            </div>
-            <div class="actualEvent">
-
+        <div class="profile">
+            <div class="profile-stats">
+                <p>Username <strong>
+                        <script>document.write(localStorage.getItem("user"));</script>
+                    </strong></p>
+                <p>Email <strong>
+                        <script>document.write(localStorage.getItem("email"));</script>
+                    </strong></p>
+                <p>Img <strong>
+                        <script>document.write(localStorage.getItem("img"));</script>
+                    </strong></p>
+                <p style="color:darkorange;" class="log-out">Log out</p>
             </div>
         </div>
     </div>
