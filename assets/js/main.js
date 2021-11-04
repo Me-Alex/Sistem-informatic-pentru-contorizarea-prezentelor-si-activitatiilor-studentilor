@@ -1,4 +1,19 @@
-// console.log(getInput(".username").value);
+
+document.querySelectorAll(".delete").forEach((element, index) => {
+    element.onclick = () => {
+        // document.querySelectorAll(".actualEvent")[index].style.display="none";
+        element.parentNode.style.display = "none";
+    }
+});
+findParameter(".dots").onclick = () => {
+    findParameter(".dropDown-options").style.display="inherit";
+    console.log("click");
+    
+}
+findParameter(".dropDown-optionP").=()=>{
+    console.log("ceva");
+    findParameter(".dropDown-options").style.display="none";
+}
 if (localStorage.getItem("user")) {
     hide("not-registered");
     // hide("form-container");
