@@ -11,7 +11,9 @@ submitB.onclick = () => {
             console.log(tempSnapshot.email);
             hide("not-registered");
             hide("form-container");
-            localStorage.setItem("user", snapshot.val().user);
+            localStorage.setItem("user", snapshot.val().user); 
+            localStorage.setItem("email", snapshot.val().email); 
+            localStorage.setItem("img", snapshot.val().img);
             // localStorage.setItem("email", email);
             window.location = "index.html";
 

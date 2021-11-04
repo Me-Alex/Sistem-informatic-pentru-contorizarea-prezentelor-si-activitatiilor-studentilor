@@ -1,10 +1,12 @@
 * {
+    border: none;
     margin: 0;
     text-decoration: none;
 }
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .get-started {
@@ -52,13 +54,14 @@ html {
 }
 
 .events {
-    width: 100vw;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2%;
+    gap: 20px;
+    padding: 2% 0 2%;
 }
 
 .profile {
@@ -85,13 +88,64 @@ html {
 }
 
 .actualEvent {
+    position: relative;
     width: 40%;
     height: 150px;
     border-radius: 16px;
     box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
     background-color: red;
+    cursor: ;
+    padding:10px;
+}
+
+.delete {
+    position: absolute;
+    /* right: 10%;
+    top:5%; */
+    right: 23px;
+    top: 15px;
     cursor: pointer;
 }
+.delete:hover{
+    opacity: 0.5;
+}
+.line1 {
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background-color: yellow;
+    transform: rotateZ(45deg);
+}
+
+.line2 {
+    position: absolute;
+    width: 15px;
+    height: 2px;
+    background-color: yellow;
+    transform: rotateZ(320deg);
+}
+
+.dots {
+    width: 20px;
+    height:20px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content:center;
+    align-items:center;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+    gap:1px;
+}
+
+.dots .dot {
+    background-color: gray;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+}
+
 /* .actualEvent:hover{
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 } */
@@ -99,6 +153,7 @@ html {
 .nav {
     display: flex;
     gap: 20%;
+    align-items: center;
 }
 
 .nav a {
@@ -131,7 +186,7 @@ html {
 }
 
 .form {
-    width: 20%;
+    width: fit-content;
     height: 40%;
     display: flex;
     flex-direction: column;
@@ -141,6 +196,66 @@ html {
 }
 
 /* end of form style */
+
+/* input styles */
+
+input {
+    width: 200px;
+    border-radius: 20px;
+    height: 40px;
+    background-color: red;
+    color: yellow;
+    border: none;
+    padding: 2px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+input::placeholder {
+    color: yellow !important;
+    font-size: 12px;
+}
+
+input:focus {
+    /* color:black; */
+    width: 250px;
+    background-color: yellow;
+    color: black;
+    border: none;
+    outline: none;
+}
+
+input:focus::placeholder {
+    color: black;
+}
+
+.submit-box {
+    width: 250px;
+    text-align: right;
+    padding: 4px;
+}
+
+.submit {
+    text-align: center;
+    width: 60px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 6px;
+    margin-left: -5px;
+    border: none;
+    transition: all 0.5s;
+    background-color: black;
+    color: yellow;
+    cursor: pointer;
+}
+
+.submit:hover {
+    width: 70px;
+    background-color: yellow;
+    color: black;
+}
+
+/* end input style */
 
 .user {
     display: flex;
@@ -152,12 +267,12 @@ html {
     flex-direction: row;
     gap: 5px;
     color: white;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 }
 
 .logged-in img {
-    width:33px;
+    width: 31px;
     height: auto;
     border-radius: 60%;
 }
@@ -166,16 +281,31 @@ html {
     /* color:red; */
     cursor: pointer;
 }
-.log-out{
-    cursor:pointer;
+
+.log-out {
+    cursor: pointer;
     text-align: center;
-    color:white !important;
+    color: white !important;
     background-color: midnightblue;
-    padding:5px;
-    border-radius:3px;
+    padding: 5px;
+    border-radius: 3px;
 }
-.log-out:hover{
-    background-color:gray;
+
+.log-out:hover {
+    background-color: gray;
+}
+
+.register {
+    border-radius: 3px;
+    padding: 5px;
+    background-color: green;
+    color: white!important;
+    transition: all 0.5s;
+}
+
+.register:hover {
+    background-color: white;
+    color: green !important;
 }
 
 ::-webkit-scrollbar {
@@ -191,8 +321,11 @@ html {
     background-color: black;
 }
 
-@media only screen and (max-width:540px){
-    .container-header{
+@media only screen and (max-width:540px) {
+    .container-header {
         font-size: 16px;
+    }
+    .actualEvent {
+        width: 60%;
     }
 }

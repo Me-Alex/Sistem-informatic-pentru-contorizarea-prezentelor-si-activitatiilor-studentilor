@@ -57,18 +57,22 @@
     <div class="container">
         <div class="container-header">
             <div class="logo">Logo</div>
-            <div class="nav">
+            <div class="nav" id="ceva">
                 <a href="index.html">Home</a>
-                <a href="">Profile</a>
+                <a href="profile.html">Profile</a>
                 <a href="">More</a>
             </div>
             <div class="user">
                 <div class="logged-in">
-                    <img src="" alt="">
+                    <img src="assets/img/download.jpg" alt="">
+                    <p>
+                        <script>document.write(localStorage.getItem("user"));</script>
+                    </p>
+                    <p style="color:darkorange;" class="log-out">Log out</p>
                 </div>
                 <div class="not-registered">
                     <a href="login.html">Log-in </a>
-                    <a href="register.html">Register</a>
+                    <a class="register" href="register.html">Register</a>
                 </div>
             </div>
         </div>
@@ -80,10 +84,12 @@
                 <input class="email"pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"  placeholder="Email"required />
                 <input class="password" type="password" placeholder="Password">
                 <input class="repeat-pass" type="password" placeholder="repeat-password " id="">
-                <input type="submit" value="ceva">
-                <button class="submit">Submit</button>
+                <div class="submit-box">
+                    <button class="submit">Submit</button>
+                </div>
+                <a href="login.html">Already have an account </a>
             </div>
-            <a href="login.html">Already have an account </a>
+          
         </div>
     </div>
 
