@@ -23,14 +23,14 @@
     <script>
         // Your web app's Firebase configuration
         const firebaseConfig = {
-            apiKey: "AIzaSyADGGJ7aseWyUAGCFI1coO6OhHN1aWZwnI",
-            authDomain: "contorizareactivitati.firebaseapp.com",
-            databaseURL: "https://contorizareactivitati-default-rtdb.europe-west1.firebasedatabase.app",
-            projectId: "contorizareactivitati",
-            storageBucket: "contorizareactivitati.appspot.com",
-            messagingSenderId: "375268191034",
-            appId: "1:375268191034:web:1edd6474eea03160d0be03",
-            measurementId: "G-ZE28G169L0"
+            apiKey: "AIzaSyAHvCM70mYl819utRwTjyJqCQpx1lsGYNc",
+            authDomain: "newdatabase-2f42a.firebaseapp.com",
+            databaseURL: "https://newdatabase-2f42a-default-rtdb.europe-west1.firebasedatabase.app",
+            projectId: "newdatabase-2f42a",
+            storageBucket: "newdatabase-2f42a.appspot.com",
+            messagingSenderId: "794348749221",
+            appId: "1:794348749221:web:e83f1d942525925d22284c",
+            measurementId: "G-2TSE1Y15T6"
         };
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
@@ -40,7 +40,7 @@
 
         // data["message"] = "Hello Google Firebase";
 
-        // firebase.database().ref('test2/' + id + "/ceva").set(data, function (error) {
+        // firebase.database().ref('user' + id + "/ceva").set(data, function (error) {
         //     if (error) {
         //         // The write failed...
 
@@ -81,7 +81,8 @@
                 <h1>Register</h1>
 
                 <input class="username" type="text" placeholder="Username">
-                <input class="email"pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"  placeholder="Email"required />
+                <input class="email" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+                    placeholder="Email" required />
                 <input class="password" type="password" placeholder="Password">
                 <input class="repeat-pass" type="password" placeholder="repeat-password " id="">
                 <div class="submit-box">
@@ -89,7 +90,7 @@
                 </div>
                 <a href="login.html">Already have an account </a>
             </div>
-          
+
         </div>
     </div>
 

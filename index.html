@@ -7,10 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistem informatic pentru contorizarea activitatiilor studentiilor </title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/functions.js"></script>
+
 </head>
 
 <body>
     <div class="get-started">
+        <script defer>
+            if (userExists()) {
+                document.write("<h1>Hello " + localStorage.getItem("user") + "</h1>");
+            }
+        </script>
         <Button><a href="#ceva"> Get Started</a></Button>
     </div>
     <div class="container">
@@ -46,20 +53,20 @@
                     <div class="line2"></div>
                 </div>
                 <h2>Test</h2>
-                <p>This event it will start in  --s</p>
+                <p>This event it will start in --s</p>
                 <div class="join">
                     <button>Join</button>
                 </div>
             </div>
-  
+
             <div class="actualEvent">
                 <div class="dots">
                     <div class="dot"></div>
                     <div class="dot"></div>
                     <div class="dot"></div>
                     <div class="dropDown-options">
-                       <button class="dropDown-optionP">Delete</button>
-                       <button>Change</button>
+                        <button class="dropDown-optionP">Delete</button>
+                        <button>Change</button>
                     </div>
                 </div>
             </div>
@@ -69,14 +76,14 @@
                     <div class="line2"></div>
                 </div>
             </div>
-  
+
             <div class="actualEvent">
                 <div class="dots">
                     <div class="dot"></div>
                     <div class="dot"></div>
                     <div class="dot"></div>
                     <div class="dropDown-options">
-                       <button class="dropDown-optionP">Delete</button>
+                        <button class="dropDown-optionP">Delete</button>
                     </div>
                 </div>
             </div>
@@ -87,7 +94,6 @@
         </div>
     </div>
 </body>
-<script src="assets/js/functions.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="assets/js/events.js"></script>
 

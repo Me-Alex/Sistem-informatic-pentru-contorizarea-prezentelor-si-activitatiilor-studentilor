@@ -45,3 +45,9 @@ function logOutUser() {
     localStorage.removeItem("email");
     localStorage.removeItem("img");
 }
+function userExists(){
+    if (localStorage.getItem("user")){
+        return true;
+    }else 
+        return false;
+}

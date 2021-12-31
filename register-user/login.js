@@ -1,10 +1,12 @@
 let submitB = findParameter(".submit");
 const dbRef = firebase.database().ref();
+// console.log(dbRef.child("user").get());
 submitB.onclick = () => {
     let user = getInput(".username").value;
     let pass = getInput(".password").value;
 
     dbRef.child("user").child(user).get().then((snapshot) => {
+        // console.log(snapshot);
         if (snapshot.exists()) {
             if (pass == snapshot.val().pass) {
                 tempSnapshot = snapshot.val();
